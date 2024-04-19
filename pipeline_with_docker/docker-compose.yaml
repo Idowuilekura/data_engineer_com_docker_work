@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  postgres-db:
+    image: postgres
+    container_name: postgres-cont
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=docker_workshop
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+  etl_pipeline:
+    build: .
+    container_name: etl_pipeline_cont
+    depends_on:
+      - postgres-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_HOST=postgres-db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DW=docker_workshop
+      - CSV_URL=https://support.staffbase.com/hc/en-us/article_attachments/360009197031/username.csv
+
+volumes:
+  postgres-data:
