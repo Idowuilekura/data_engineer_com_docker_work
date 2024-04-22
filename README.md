@@ -8,6 +8,8 @@ The folder in the repository are grouped as
 - the webinar_slides holds the slide for the webinar
 
 ## Architectural Diagram 
+![Screenshot from 2024-04-22 16-49-43](https://github.com/Idowuilekura/data_engineer_com_docker_work/assets/38056084/d161f229-7233-4101-af41-b320ddb7c9bb)
+
 
 
 Softwares to install:
