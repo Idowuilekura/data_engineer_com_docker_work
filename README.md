@@ -1,5 +1,6 @@
 # data_engineer_com_docker_work
-This is the repository of the data engineer community docker workshop, the workshop dived into the internals of docker, overlay filesystems, docker deamon, docker networks, how to build a docker container from scratch, build and containarize an ETL pipeline with docker and docker-compose
+This is the repository of the data engineer community docker  which was held on the 20th of April 2024.
+The workshop dived into the internals of docker, overlay filesystems, docker deamon, docker networks, how to build a docker container from scratch, build and containarize an ETL pipeline with docker and docker-compose
 The folder in the repository are grouped as 
 - build pipeline from scratch holds the folder for building a docker image from scratch
 - the overlaytest folder contains the file for building the overlay demo directory
