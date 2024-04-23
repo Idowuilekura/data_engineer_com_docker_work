@@ -5,6 +5,7 @@ The folder in the repository are grouped as
 - build pipeline from scratch holds the folder for building a docker image from scratch
 - the overlaytest folder contains the file for building the overlay demo directory
 - the pipeline_with_docker holds the files for building the ETL pipeline with docker and docker-compose
+- the pipeline_with_out_docker holds the files for building the ETL pipeline without docker 
 - the webinar_slides holds the slide for the webinar
 - references_materials contain resources to further your learning
 ## Architectural Diagram 
